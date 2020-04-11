@@ -1,4 +1,4 @@
--- Creating tables for PH-EmployeeDB
+-- Creating tables for PH-EmployeeDB.
 CREATE TABLE departments (
 	dept_no VARCHAR(4) NOT NULL,
 	dept_name VARCHAR(40) NOT NULL,
@@ -53,3 +53,17 @@ CREATE TABLE titles (
 	FOREIGN KEY(emp_no) REFERENCES employees (emp_no),
 	PRIMARY KEY (emp_no,from_date)
 );
+
+-- View the tables content after importing data into the tabels.
+
+SELECT * FROM departments;
+
+SELECT * FROM employees;
+
+SELECT * FROM dept_manager;
+
+SELECT * FROM salaries;
+
+SELECT * FROM dept_emp;
+
+SELECT * FROM titles;
