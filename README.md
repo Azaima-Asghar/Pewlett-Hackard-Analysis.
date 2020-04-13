@@ -3,7 +3,7 @@
 
  ### *Project Overview*
 
- Bobby is an upcoming HR analyst at Pewlett Hackward whose task is to perform employee research specifically, he needs to find answers to the following questions.
+ Bobby is an upcoming HR analyst at Pewlett Hackward company whose task is to perform employee research specifically, he needs to find answers to the following questions.
 
 1) Who will be retiring in the next few years from the company? 
 
@@ -11,7 +11,7 @@
 
 This analysis will help future proof Pewlett Hackward by generating a list of all employees eligible for the retirement package.
  
- The employee data bobby needs is only available in the form of 6 csv files because Pewlett Hackward has been mainly using Excel and VBA to work with their data. But now they finally decided to update their methods and instead use SQL.
+ The employee data bobby needs is only available in the form of six csv files because Pewlett Hackward has been mainly using Excel and VBA to work with their data. But now they finally decided to update their methods and instead use SQL.
 
 The task for this project is to help bobby build an employee database with SQL by applying data modeling, engineering and analytical skills.  
 
@@ -23,13 +23,13 @@ The task for this project is to help bobby build an employee database with SQL b
 
 ## *Summary*
 
-An entity relationship diagram was made to view the relationships between the 6 csv files. The ERD is the following. 
+An entity relationship diagram was made to view the relationships between the six csv files. The ERD is the following:
 
 <br>
 
 ![](EmployeeDB.png)
 
-Six different tables were created using PgAdmin that stored the desired data in them. Then different queries were performed using these six tables each representing the above csv files. 
+Six different tables were created using PgAdmin that stored the desired data in them. Then different queries were performed using these six tables, each representing the above csv files. 
 
 Bobby’s boss has determined that anyone born between 1952 and 1955 will begin to retire. To narrow the search for retirement elegiblity the query is to include a specific hiring range (between 1985 and 1988). 
 
@@ -208,7 +208,7 @@ INTO titles_frequency
 FROM employees_duplicatefree_info
 GROUP BY title;*
 
-**Employees who are ready to be mentors:** Inner join IS performed on employees and titles tables since all the required information resided in these tables. To get the employees who will be ready to become a mentor the birth date needs to be between January 1, 1965 and December 31, 1965 for them.The following query returns a tabel that contains all the required information:
+**Employees who are ready to be mentors:** Inner join is performed on employees and titles tables since all the required information resided in these tables. To get the employees who will be ready to become a mentor the birth date needs to be between January 1, 1965 and December 31, 1965 for them.The following query returns a tabel that contains all the required information:
 
 
 *SELECT e.emp_no,
@@ -225,7 +225,7 @@ WHERE (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 AND (e.hire_date BETWEEN '1985-01-01' AND '1988-12-31')
 AND (ti.to_date = '9999-01-01');* 
 
-**Count the number of employees that are ready for to be mentors:**
+**Count the number of employees that are ready to be mentors:**
 
 *SELECT COUNT(*) FROM mentors_info;*
 
