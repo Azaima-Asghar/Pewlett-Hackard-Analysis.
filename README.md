@@ -135,6 +135,8 @@ All the tables created by the above queries are present in the data folder. The 
 
 ### *Challenge Overview*
 
+NOTE: The challenge.sql file resides in Queries folder. 
+
 The HR Director at Pewlett Hackward  would like an additional list of employees who would be good candidates for a supervisory role. Ideally, these candidates would be born in 1965.
 
 **Number of [titles] Retiring:** Inner joins are performed on employees, titles and salaries tables since all the required information resided in these tables.The following query returns a tabel that contains all the required information:
