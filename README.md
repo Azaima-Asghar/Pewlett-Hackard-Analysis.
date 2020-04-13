@@ -135,7 +135,7 @@ All the tables created by the above queries are present in the data folder. The 
 
 ### *Challenge Overview*
 
-NOTE: The challenge.sql file resides in Queries folder. 
+NOTE: The challenge.sql file resides in the Queries folder. 
 
 The HR Director at Pewlett Hackward  would like an additional list of employees who would be good candidates for a supervisory role. Ideally, these candidates would be born in 1965.
 
