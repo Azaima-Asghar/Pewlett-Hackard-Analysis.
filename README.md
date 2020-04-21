@@ -20,6 +20,7 @@ The task for this project is to help bobby build an employee database with SQL b
 * Data Source: departments.csv, dept_manager.csv, employees.csv, dept_emp.csv, salaries.csv and titles.csv (present in the Data folder).
 * Postgres - Database system for holding data.
 * PgAdmin - Interface to talk to Postgres (All SQL actions take place here). 
+* Visual Studio Code.
 
 ## *Summary*
 
